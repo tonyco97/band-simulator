@@ -1,70 +1,165 @@
-# Getting Started with Create React App
+# Musical Instruments Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App Screenshot](screenshot.png)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The **Musical Instruments Simulator** is an interactive web application developed with **React** and **Tailwind CSS**, allowing users to virtually play various musical instruments directly from their browser. Currently, the app includes simulations of a **Guitar** and a **Piano**, each with animations and sounds that respond to keyboard inputs.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Guitar**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Play notes using the arrow keys (`ArrowLeft`, `ArrowRight`, `ArrowUp`, `ArrowDown`).
+  - Animations of strings vibrating corresponding to the played note.
 
-### `npm test`
+- **Piano**
+  - Play notes using the keys `A`, `S`, `D`, `F`, `G`, `H`, `J` for the notes C, D, E, F, G, A, B.
+  - Animations of the keys slightly enlarging during note playback.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Preview
 
-### `npm run build`
+![Guitar Preview](guitar-screenshot.png)  
+_Interface of the guitar simulator._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Piano Preview](piano-screenshot.png)  
+_Interface of the piano simulator._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: CSS framework for rapid and customizable styling.
+- **Framer Motion**: Library for smooth animations in React.
+- **React Router DOM**: Routing management within the application.
 
-### `npm run eject`
+## Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have the following installed on your system:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repository**
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/musical-instruments-simulator.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Navigate to the project folder**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd musical-instruments-simulator
+   ```
 
-### Code Splitting
+3. **Install dependencies**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+   or, if you're using Yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   yarn install
+   ```
 
-### Making a Progressive Web App
+4. **Start the application in development mode**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+   or:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   yarn start
+   ```
 
-### Deployment
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage
 
-### `npm run build` fails to minify
+- **Guitar**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - Press the arrow keys (`ArrowLeft`, `ArrowRight`, `ArrowUp`, `ArrowDown`) to play different notes.
+  - The guitar strings will animate corresponding to the note played.
+
+- **Piano**
+  - Press the keys `A`, `S`, `D`, `F`, `G`, `H`, `J` on your keyboard to play the notes C, D, E, F, G, A, B respectively.
+  - The piano keys will slightly enlarge during note playback.
+
+## Project Structure
+
+```bash
+src/
+├── components/
+│   ├── Navbar.js
+│   ├── Home.js
+│   ├── GuitarSimulator.js
+│   ├── PianoSimulator.js
+│   └── ...
+├── assets/
+│   ├── Guitar.svg
+│   ├── Piano.svg
+│   └── ...
+├── audio/
+│   ├── guitar/
+│   │   ├── do.mp3
+│   │   ├── re.mp3
+│   │   └── ...
+│   ├── piano/
+│   │   ├── do.mp3
+│   │   ├── re.mp3
+│   │   └── ...
+│   └── ...
+├── App.js
+├── index.js
+├── index.css
+└── tailwind.config.js
+```
+
+## Tailwind CSS Configuration
+
+Ensure that Tailwind CSS is correctly configured by adding the necessary classes and customizing `tailwind.config.js` according to your needs.
+
+## Contributing
+
+Contributions are welcome! Follow these steps to contribute to the project:
+
+1. **Fork the repository**
+
+2. **Create a branch for your feature**
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Commit your changes**
+
+   ```bash
+   git commit -m "Add description of your feature"
+   ```
+
+4. **Push the branch**
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. **Open a Pull Request**
+
+   Make sure to clearly describe the changes made and to follow the project's guidelines.
+
+## License
+
+Distributed under the MIT License.
+
+## Contact
+
+For more information or questions, you can contact me at [tonyco97.tc@gmail.com](mailto:tonyco97.tc@gmail.com).
+
+---
+
+**Note:** Ensure that you add the required audio files in the `audio` folder and replace the preview images with actual screenshots of the application to enhance the project's presentation.
