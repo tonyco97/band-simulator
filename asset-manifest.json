@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/band-simulator/static/css/main.d4d9ed15.css",
+    "main.js": "/band-simulator/static/js/main.dbc1a8cd.js",
+    "index.html": "/band-simulator/index.html",
+    "main.d4d9ed15.css.map": "/band-simulator/static/css/main.d4d9ed15.css.map",
+    "main.dbc1a8cd.js.map": "/band-simulator/static/js/main.dbc1a8cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4d9ed15.css",
+    "static/js/main.dbc1a8cd.js"
+  ]
+}
